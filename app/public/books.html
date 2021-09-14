@@ -18,6 +18,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+  <script src='js/tablesort.min.js'></script>
+
+<!-- Include sort types you need -->
+<script src='tablesort.number.js'></script>
+<script src='tablesort.date.js'></script>
+
+<script>
+  new Tablesort(document.getElementById('booktable'));
+</script>
+
  
 
 </head>
@@ -40,7 +50,7 @@
       </nav>
   </body>
   <body>
-      <table id ="booktable" class="table table-bordered">
+      <table id="booktable" class="table table-bordered">
         <thead>
           <tr>
             <th scope="col">Title</th>
