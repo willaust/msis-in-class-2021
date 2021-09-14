@@ -19,14 +19,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- Tablesort: http://tristen.ca/tablesort/demo/ -->
-  <script src='tablesort.min.js'></script>
+  <script src='js/tablesort.min.js'></script>
 
 <!-- Include sort types you need -->
-<script src='tablesort.number.js'></script>
-<script src='tablesort.date.js'></script>
+<script src='js/tablesort.number.js'></script>
+<script src='js/tablesort.date.js'></script>
 
 <script>
-  new Tablesort(document.getElementById('table-id'));
+  new Tablesort(document.getElementById('booktable'));
 </script>
 
 </head>
@@ -49,7 +49,7 @@
       </nav>
   </body>
   <body>
-      <table class="table table-bordered">
+      <table id ="booktable" class="table table-bordered">
         <thead>
           <tr>
             <th scope="col">Title</th>
