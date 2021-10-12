@@ -16,8 +16,8 @@ msrp DECIMAL(4,2)
 INSERT INTO book ( bookID, title, author, yearpublished, publisher, pagecount, msrp) VALUES 
 ('In Search of Lost Time', 'Marcel Proust', '1913', 'Publish Books', '340', '35' );
 INSERT INTO book ( bookID, title, author, yearpublished, publisher, pagecount, msrp) VALUES 
-('In Search of Lost Time', 'Marcel Proust', '1913', 'Publish Books', '340', '35' );
+('Ulysses', 'James Hoyce', '2012', 'Book Publishers', '420', '25' );
 INSERT INTO book ( bookID, title, author, yearpublished, publisher, pagecount, msrp) VALUES 
-('In Search of Lost Time', 'Marcel Proust', '1913', 'Publish Books', '340', '35' );
+('Moby Dick', 'Herman Melville', '1815', 'Yahoo Publishers', '1125', '55' );
 INSERT INTO book ( bookID, title, author, yearpublished, publisher, pagecount, msrp) VALUES 
-('In Search of Lost Time', 'Marcel Proust', '1913', 'Publish Books', '340', '35' );
+('The Great Gatsby', 'F. Scott Fitzgerals', '1960', 'Yeehaw Publishers', '500', '99' );
