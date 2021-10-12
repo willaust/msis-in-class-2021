@@ -5,7 +5,8 @@ const SomeApp = {
         students: [],
         selectedStudent: null,
         offers: [],
-        offerForm: {}
+        offerForm: {},
+        books: []
       }
     },
     computed: {},
@@ -25,6 +26,17 @@ const SomeApp = {
             this.selectedStudent = s;
             this.offers = [];
             this.fetchOfferData(this.selectedStudent);
+        },
+        fetchBookData() {
+            fetch('/api/book/')
+            .then( response => response.json() )
+            .then( (responseJson) => {
+                console.log(responseJson);
+                this.books = responseJson;
+            })
+            .catch( (err) => {
+                console.error(err);
+            })
         },
         fetchStudentData() {
             fetch('/api/student/')
@@ -76,7 +88,7 @@ const SomeApp = {
         }
     },
     created() {
-        this.fetchStudentData();
+        this.fetchBookData();
     }
   
   }
