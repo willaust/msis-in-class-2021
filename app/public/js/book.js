@@ -64,12 +64,11 @@ const SomeApp = {
                 console.error(error);
             });
         },
-        postNewOffer(evt) {
-          this.offerForm.studentId = this.selectedStudent.id;        
+        postNewOffer(evt) {       
           console.log("Posting:", this.offerForm);
           // alert("Posting!");
   
-          fetch('api/offer/create.php', {
+          fetch('create.php', {
               method:'POST',
               body: JSON.stringify(this.offerForm),
               headers: {
