@@ -66,7 +66,7 @@ const SomeApp = {
         },
         postNewOffer(evt) {       
           console.log("Posting:", this.offerForm);
-          // alert("Posting!");
+          //alert("Posting!");
   
           fetch('create.php', {
               method:'POST',
